@@ -44,8 +44,10 @@ Select input text file and output csv dir.
 If you want to run it by double-clicking, you can create a Powershell script or bat file.
 
 open notepad then write
-
+```
 python rxtocsv-ez.py 
+exit
+```
 
 then savefile and change extension .txt to bat
 
