@@ -47,6 +47,6 @@ open notepad then write
 
 python rxtocsv-ez.py 
 
-then save and change extension .txt to bat
+then save,name file and change extension .txt to bat
 
 
