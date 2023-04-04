@@ -25,7 +25,7 @@ Then Import file.
 
 #rxtocsv-ez.py
 
-This is easy version.
+This is easy version but run in only Windows.
 
 first, install easygui
 
