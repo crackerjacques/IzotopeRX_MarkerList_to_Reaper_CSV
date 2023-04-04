@@ -23,7 +23,7 @@ Then Import file.
 ![IMG](https://github.com/crackerjacques/IzotopeRX_MarkerList_to_Reaper_CSV/blob/main/maker_import.png?raw=true)
 
 
-#rxtocsv-ez.py
+# rxtocsv-ez.py
 
 This is easy version but run in only Windows.
 
