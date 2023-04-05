@@ -1,6 +1,6 @@
 # IzotopeRX_MarkerList_to_Reaper_CSV
 Import iZotope RX markers into your Reaper project.
-__~~The current version does not work if there is a space in the marker name, so I will upload a fixed version soon. Sorry!~~__  Now fixed
+~~The current version does not work if there is a space in the marker name, so I will upload a fixed version soon. Sorry!~~  __<-Now fixed__
 
 # Requirements
 
