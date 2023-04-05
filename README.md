@@ -1,7 +1,7 @@
 # IzotopeRX_MarkerList_to_Reaper_CSV
 This script is convert Izotope RX Marker List text to Reaper CSV Marker List.
 
-__The current version does not work if there is a space in the marker name, so I will upload a fixed version soon. Sorry!__
+__~~The current version does not work if there is a space in the marker name, so I will upload a fixed version soon. Sorry!~~__  Now fixed
 
 # Requirements
 
