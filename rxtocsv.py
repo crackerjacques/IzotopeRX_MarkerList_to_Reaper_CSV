@@ -49,7 +49,7 @@ def main():
     if args.input and args.output:
         convert_marker_file(args.input, args.output)
     else:
-        print('This script make to covert RX maker and region list file to reaper csv.:')
+        print('This script makes to convert RX marker and region list file to reaper csv.:')
         print('Convert then Go to action list and search Markers/Regions: Import markers/regions from file.:')
         print('Please type:')
         print('python rxtocsv.py -i your_input_file.txt -o your_output.csv')
