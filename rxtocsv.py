@@ -12,9 +12,9 @@ def convert_marker_file(input_file, output_file):
         if line.startswith('Marker file version') or line.startswith('Time format'):
             continue
 
-        match = re.match(r'(\d\d)_(\w+)\t(\d\d:\d\d:\d\d\.\d+)(\t(\d\d:\d\d:\d\d\.\d+))?', line)
+        match = re.match(r'(\d\d)?_?([\w\s]+)\t(\d\d:\d\d:\d\d\.\d+)(\t(\d\d:\d\d:\d\d\.\d+))?', line)
         if match:
-            name = match.group(2)
+            name = match.group(2) if match.group(1) is None else f"{match.group(1)}_{match.group(2)}"
             start = match.group(3)
             end = match.group(5) if match.group(5) else ''
             length = ''
@@ -29,10 +29,11 @@ def convert_marker_file(input_file, output_file):
                 start = f'{int(h1):02d}:{int(m1):02d}:{s1:06.3f}'
                 end = f'{int(h2):02d}:{int(m2):02d}:{s2:06.3f}'
 
-            converted_lines.append(f'R{counter},{name},{start},{end},{length}\n')
+            converted_lines.append(f'R{counter},"{name}",{start},{end},{length}\n')
             counter += 1
         else:
-            converted_lines.append(f'M{counter},,,,{length}\n')
+            length = ''
+            converted_lines.append(f'M{counter},"",{length}\n')
             counter += 1
 
     with open(output_file, 'w') as f:
