@@ -29,10 +29,10 @@ def main():
     if args.input and args.output:
         convert_csv_to_text(args.input, args.output)
     else:
-        print('This script makes to convert reaper csv to RX maker and region list file.:')
+        print('This script makes to convert reaper csv to RX marker and region list file.:')
         print('Convert then Go to Window -> Markers and Regions and Import Marker file. :')
         print('Please type:')
-        print('python csvtorx.py -i your_input_file.csv -o your_output.txr')
+        print('python csvtorx.py -i your_input_file.csv -o your_output.txt')
 
 if __name__ == '__main__':
     main()
