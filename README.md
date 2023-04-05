@@ -60,3 +60,6 @@ then savefile and change extension .txt to bat
 Do the opposite of rxtocsv.py
 
 Therefore, import Reaper project markers into RX.
+![IMG](https://github.com/crackerjacques/IzotopeRX_MarkerList_to_Reaper_CSV/blob/main/csv2txt.png?raw=true)
+
+By the way, my iMac fan spins too much...?
