@@ -3,7 +3,7 @@ import argparse
 from decimal import Decimal
 
 def convert_marker_file(input_file, output_file):
-    with open(input_file, 'r') as f:
+    with open(input_file, 'r', encoding="utf-8") as f:
         lines = f.readlines()
 
     converted_lines = ['#,Name,Start,End,Length\n']
@@ -36,7 +36,7 @@ def convert_marker_file(input_file, output_file):
             converted_lines.append(f'M{counter},"",{length}\n')
             counter += 1
 
-    with open(output_file, 'w') as f:
+    with open(output_file, 'w', encoding="utf-8") as f:
         f.writelines(converted_lines)
 
 def main():
